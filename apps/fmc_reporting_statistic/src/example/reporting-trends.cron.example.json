@@ -1,0 +1,19 @@
+{
+	"origin": "cron",
+	"service_name": "REPORT_TRENDS_CHANNEL",
+	"target_topic": "notification",
+	"parameter": {
+		"program": "WMDEVTESTING",
+		"notification": {
+			"subject": "[REPORT] Telkomsel Poin - Report Trends Channel",
+			"to": [
+				"report.001@example.com",
+				"report.002@example.com"
+			],
+			"cc": [
+				"report.cc.001@example.com",
+				"report.cc.002@example.com"
+			]
+		}
+	}
+}
