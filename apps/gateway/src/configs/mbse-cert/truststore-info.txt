@@ -1,3 +1,0 @@
-dev-pass		: mbse#2021
-preprod-pass	: tselmbse@2021
-prod-pass	: mbse#2021
