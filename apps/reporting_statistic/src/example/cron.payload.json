@@ -1,0 +1,13 @@
+{
+  "origin": "cron", // Mandatory
+  "service_name": "reward_live_system", // Mandatory
+  "target_topic": "notification", // Optional
+  "running_at": "2023-03-10T10:00:00.000Z", // Optional
+  "parameter": {} // Optional
+}
+
+/*
+  - "service_name" is used to call services contained in the module.
+  - Use "target_topic" to call the service via Message Broker (Kafka)
+  */
+

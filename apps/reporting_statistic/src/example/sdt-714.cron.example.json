@@ -1,0 +1,13 @@
+{
+    "origin": "cron",
+    "service_name": "",
+    "target_topic": "notification",
+    "parameter": {
+        "daily_summary_point": true,
+        "notification": {
+            "subject": "[REPORT] Telkomsel Poin - Report Monitoring Transaksi Poin",
+            "to": ["report.001@example.com", "report.002@example.com"],
+            "cc": ["report.cc.001@example.com", "report.cc.002@example.com"]
+        }
+    }
+}
