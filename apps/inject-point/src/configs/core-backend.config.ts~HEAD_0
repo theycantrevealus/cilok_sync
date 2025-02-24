@@ -1,0 +1,23 @@
+export default () => ({
+  'core-backend': {
+    raw: process.env.CORE_BACK_END,
+    raw_port: process.env.CORE_BACK_END_PORT,
+    api: {
+      url: process.env.CORE_BACKEND_API_URL,
+      'token-gateway': process.env.CORE_BACKEND_API_TOKEN_GATEWAY,
+    },
+    client: {
+      id: process.env.CORE_BACKEND_CLIENT_ID,
+      secret: process.env.CORE_BACKEND_CLIENT_SECRET,
+    },
+    realm: {
+      id: process.env.CORE_BACKEND_REALM_ID,
+    },
+    branch: {
+      id: process.env.CORE_BACKEND_BRANCH_ID,
+    },
+    merchant: {
+      id: process.env.CORE_BACKEND_MERCHANT_ID,
+    },
+  },
+});

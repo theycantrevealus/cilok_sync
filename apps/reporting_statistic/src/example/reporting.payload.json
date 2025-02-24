@@ -1,0 +1,933 @@
+{
+	"transaction_classify": "REDEEM",
+	"transaction_status" : "Success",
+	"trace_custom_code": "RDM",
+	"origin": "eligibility_success.deduct_success.donation_success.notification_success",
+	"program": {
+		"program_edit": null,
+		"_id": "63c669bf954342dc1f7a12e5",
+		"name": "WMDEVTESTING",
+		"desc": "",
+		"start_period": "2023-01-17T09:23:54.010Z",
+		"end_period": "2038-01-31T09:23:54.000Z",
+		"point_type": "62ffc1d68a01008799e785cb",
+		"program_mechanism": "62ffbe08745271e7ba71e870",
+		"program_owner": "62ffc0fc8a01008799e785bc",
+		"program_owner_detail": "62ffd9ed1e38fbdeb16f1f53",
+		"keyword_registration": "",
+		"point_registration": 0,
+		"whitelist_counter": true,
+		"logic": "Intersection",
+		"program_time_zone": "WIB",
+		"program_group": "63be301f841ea2ad7da569b3",
+		"alarm_pic_type": "",
+		"alarm_pic": [
+			"6341792827fcde0e845cf411"
+		],
+		"threshold_alarm_expired": 1,
+		"threshold_alarm_voucher": 70,
+		"program_notification": [
+			{
+				"template": "63008b6c746163c934b99aa2",
+				"template_content": "Program [programName] keyword[keywordName] akan berakhir tgl [keywordEndDate] Pkl [keywordEndTime] [timeZone] [programName] [keywordEndDate] [timeZone] [keywordEndDate] [timeZone]",
+				"via": [
+					"62ffc2988a01008799e785fd",
+					"62ffc2988a01008799e785fe"
+				],
+				"notif_type": "63030781358dd618b43ef2bd"
+			},
+			{
+				"template": "63008b6c746163c934b99aa2",
+				"template_content": "Quota Program [programName] keyword[keywordName] telah melebih batas [thresholdQuota]  % dgn sisa[remainingQuota] di lokasi [location]. [threshold] [timeZone] [totalbidder] [totalQuota] [trx date] [trxType] [validReplyTime] [voucherCode] [keywordStartDate]",
+				"via": [
+					"62ffc2988a01008799e785fe",
+					"62ffc2988a01008799e785fd"
+				],
+				"notif_type": "630307c8358dd618b43ef2cb"
+			},
+			{
+				"template": "63008b6c746163c934b99aa2",
+				"template_content": "Alert. System Error. Detail: [FailedCondition]",
+				"via": [
+					"62ffc2988a01008799e785fd",
+					"63430cb651c318ac191b1d9b",
+					"62ffc2988a01008799e785fe"
+				],
+				"notif_type": "6318b4232c84a42231c717af"
+			},
+			{
+				"template": "63008b6c746163c934b99aa2",
+				"template_content": "Anda berhasil terdaftar pd prog [programName]. ",
+				"via": [
+					"62ffc2988a01008799e785fe"
+				],
+				"notif_type": "6318b4322c84a42231c717c5"
+			},
+			{
+				"template": "63008b6c746163c934b99aa2",
+				"template_content": "Maaf, Pendaftaran anda pd prog [programName], gagal. Detail: [FailedCondition]",
+				"via": [
+					"62ffc2988a01008799e785fe"
+				],
+				"notif_type": "6318b43b2c84a42231c717db"
+			},
+			{
+				"template": "63008b6c746163c934b99aa2",
+				"template_content": "System busy please try again later [FailedCondition]",
+				"via": [
+					"62ffc2988a01008799e785fe"
+				],
+				"notif_type": "632b15a463d18f30ac06f167"
+			}
+		],
+		"program_approval": "62ffbdfe745271e7ba71e858",
+		"is_draft": false,
+		"need_review_after_edit": false,
+		"created_by": {
+			"_id": "633594fb37845362144f19b5",
+			"user_name": "putri",
+			"__v": 0,
+			"created_at": "2022-09-29T11:25:13.552Z",
+			"deleted_at": null,
+			"email": "putri@ptmitrabhakti.com",
+			"first_name": "Mrs. Putri",
+			"job_level": "User",
+			"superior_local": "",
+			"superior_hq": "633580da37845362144f0eda",
+			"job_title": "General User",
+			"last_name": "",
+			"phone": "0891234567|TH|+62",
+			"role": "63357ce737845362144f088e",
+			"type": "business",
+			"updated_at": "2022-09-29T11:25:13.552Z",
+			"user_id": "role-63347cd14e1348281aab21a9",
+			"role_detail": {
+				"_id": "63357ce737845362144f088e",
+				"role_id": "role-63347cd14e1348281aab21a9",
+				"__v": 0,
+				"authorizes": [],
+				"desc": "",
+				"name": "General User"
+			},
+			"account_location": {
+				"__v": 0,
+				"location": "62ffd9ed1e38fbdeb16f1f53",
+				"location_detail": {
+					"code": "1",
+					"name": "HQ",
+					"type": "62ffc0fc8a01008799e785bc"
+				}
+			},
+			"core_payload": {
+				"locales": [
+					{
+						"id": "locale-60f550aa0cec03af7a5af73f",
+						"code": "en-US",
+						"name": "English",
+						"image_url": "https://bifrost.sandbox.wegiv.co/locale/en-US.png",
+						"status": "Active",
+						"__v": 0,
+						"time": "2020-01-01T00:00:00.000Z"
+					},
+					{
+						"id": "locale-60f550aa0cec03af7a5af740",
+						"code": "th-TH",
+						"name": "Thai",
+						"image_url": "https://bifrost.sandbox.wegiv.co/locale/th-TH.png",
+						"status": "Active",
+						"__v": 0,
+						"time": "2020-01-01T00:00:00.000Z"
+					}
+				],
+				"currencies": [
+					{
+						"id": "curecy-5902ca0b0257bb14df426921",
+						"code": "THB",
+						"name": "Thai Baht",
+						"unit_name": "unit_name",
+						"image_url": "https://bifrost.sandbox.wegiv.co/currency/currency_THB.png",
+						"status": "Active",
+						"__v": 0,
+						"time": "2020-01-01T00:00:00.000Z"
+					}
+				],
+				"user_profile": {
+					"id": "user-6335713278bc88320c08e662",
+					"username": "putri",
+					"firstname": "Mrs. Putri",
+					"lastname": "",
+					"job_title": "General User",
+					"job_level": "User",
+					"identification": {
+						"employee_no": "00001005"
+					},
+					"phone": "0891234567|TH|+62",
+					"email": "putri@ptmitrabhakti.com",
+					"image_url": null,
+					"status": "Active",
+					"last_access_time": "2023-01-17T09:26:15.452Z",
+					"__v": 0,
+					"role_id": "role-63347cd14e1348281aab21a9"
+				},
+				"authorizes": [
+					{
+						"object_code": "business.config.program",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.keyword",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.merchant",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.lov",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.bank",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.bucket",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.channel",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.customer_brand",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.customer",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.location",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.merchandise",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.outlet",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.parnert",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.notification",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.pic",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.tier",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					}
+				]
+			}
+		},
+		"deleted_at": null,
+		"created_at": "2023-01-16T21:26:23.000Z",
+		"updated_at": "2023-01-16T21:26:23.000Z",
+		"__v": 0,
+		"whitelist_check": true
+	},
+	"keyword": {
+		"keyword_edit": null,
+		"_id": "63d9d3ef7367a1731283e684",
+		"reward_catalog_field": [],
+		"eligibility": {
+			"name": "WMDONATIONFIXED",
+			"start_period": "2023-01-17T09:23:54.010Z",
+			"end_period": "2038-01-31T09:23:54.000Z",
+			"program_experience": [
+				"6300f9f56c248f55eead2070"
+			],
+			"keyword_type": "",
+			"point_type": "",
+			"poin_value": "Fixed",
+			"poin_redeemed": 1,
+			"channel_validation": false,
+			"channel_validation_list": [],
+			"eligibility_locations": false,
+			"locations": [
+				"62ffd9ed1e38fbdeb16f1f53"
+			],
+			"program_title_expose": "Donation Fixed",
+			"merchant": "63d1403f1a2f7b6deb71cd07",
+			"program_id": "63c669bf954342dc1f7a12e5",
+			"merchandise_keyword": false,
+			"keyword_schedule": "Daily",
+			"program_bersubsidi": false,
+			"total_budget": 0,
+			"customer_value": 0,
+			"multiwhitelist": false,
+			"multiwhitelist_program": [],
+			"enable_sms_masking": false,
+			"sms_masking": "",
+			"timezone": "",
+			"for_new_redeemer": false,
+			"max_mode": "",
+			"max_redeem_counter": 0,
+			"segmentation_customer_tier": [],
+			"segmentation_customer_los_operator": "",
+			"segmentation_customer_los_max": 0,
+			"segmentation_customer_los_min": 0,
+			"segmentation_customer_los": 0,
+			"segmentation_customer_type": "",
+			"segmentation_customer_most_redeem": [],
+			"segmentation_customer_brand": [],
+			"segmentation_customer_prepaid_registration": false,
+			"segmentation_customer_kyc_completeness": false,
+			"segmentation_customer_poin_balance_operator": "",
+			"segmentation_customer_poin_balance": 0,
+			"segmentation_customer_poin_balance_max": 0,
+			"segmentation_customer_poin_balance_min": 0,
+			"segmentation_customer_preference": "",
+			"segmentation_customer_arpu_operator": "",
+			"segmentation_customer_arpu": 0,
+			"segmentation_customer_arpu_min": 0,
+			"segmentation_customer_arpu_max": 0,
+			"segmentation_customer_preferences_bcp": "",
+			"location_type": "62ffc0fc8a01008799e785bc",
+			"location_area_identifier": "",
+			"location_region_identifier": "",
+			"keyword_shift": [
+				{
+					"from": "2023-02-01T02:50:25.161Z",
+					"to": "2023-02-01T02:50:25.161Z"
+				}
+			],
+			"bcp_app_name": "",
+			"bcp_app_name_operator": "",
+			"bcp_app_category": "",
+			"bcp_app_category_operator": ""
+		},
+		"bonus": [
+			{
+				"bonus_type": "telco_postpaid",
+				"donation_category": "633a5a9c7518025f5421120d",
+				"minimum_poin": 1,
+				"target_poin": 15,
+				"stock_location": [
+					{
+						"name": "HQ",
+						"location_id": "62ffd9ed1e38fbdeb16f1f53",
+						"stock": 0
+					}
+				]
+			}
+		],
+		"notification": [
+			{
+				"via": [
+					"62ffc2988a01008799e785fe"
+				],
+				"receiver": [
+					"6302489253b5ef1a0e174589"
+				],
+				"bonus_type_id": "",
+				"code_identifier": "6319f7e751e92661186160f0",
+				"start_period": "2023-01-17T09:23:54.010Z",
+				"end_period": "2038-01-31T09:23:54.000Z",
+				"notif_type": "636cded58bac83a630049cc5",
+				"notification_content": "Selamat Anda sukses menukar [poinRedeem] [programName] menjadi hadiah  [keywordDesc]: [voucherCode]/ [CouponAmountByTrx]/ pada Program [programName] yang berlaku sampai dengan [expDateVoucher].  ",
+				"keyword_name": "WMDONATIONFIXED"
+			},
+			{
+				"via": [
+					"62ffc2988a01008799e785fe"
+				],
+				"receiver": [
+					"6302488d53b5ef1a0e17457b"
+				],
+				"bonus_type_id": "",
+				"code_identifier": "6319f7f851e926611861610a",
+				"start_period": "2023-01-17T09:23:54.010Z",
+				"end_period": "2038-01-31T09:23:54.000Z",
+				"notif_type": "636cdfab8bac83a630049cda",
+				"notification_content": "Pelanggan [msisdn] sukses menukar [poinRedeem] [programName] menjadi hadiah  [keywordDesc]: [voucherCode]/ [CouponAmountByTrx]/ pada Program [programName] yang berlaku sampai dengan [expDateVoucher].  ",
+				"keyword_name": "WMDONATIONFIXED"
+			},
+			{
+				"via": [
+					"62ffc2988a01008799e785fe"
+				],
+				"receiver": [
+					"6302489253b5ef1a0e174589"
+				],
+				"bonus_type_id": "",
+				"code_identifier": "6319f81b51e92661186161a9",
+				"start_period": "2023-01-17T09:23:54.010Z",
+				"end_period": "2038-01-31T09:23:54.000Z",
+				"notif_type": "63965463bf4560ea3916b360",
+				"notification_content": "[programName] [bonusName] [poinRedeem] [poinBucket] [channelName]\nMaaf, penukaran Poin untuk Program [programName] gagal. Mohon coba beberapa saat lagi ",
+				"keyword_name": "WMDONATIONFIXED"
+			},
+			{
+				"via": [],
+				"receiver": [],
+				"bonus_type_id": "",
+				"code_identifier": "6319f82851e92661186161c3",
+				"start_period": "2023-01-17T09:23:54.010Z",
+				"end_period": "2038-01-31T09:23:54.000Z",
+				"notif_type": "",
+				"notification_content": "",
+				"keyword_name": ""
+			},
+			{
+				"via": [
+					"62ffc2988a01008799e785fe"
+				],
+				"receiver": [
+					"6302489253b5ef1a0e174589"
+				],
+				"bonus_type_id": "",
+				"code_identifier": "6372fb31200e05a5df75142d",
+				"start_period": "2023-01-17T09:23:54.010Z",
+				"end_period": "2038-01-31T09:23:54.000Z",
+				"notif_type": "636cd4b28bac83a630049b1f",
+				"notification_content": "Template Campaign after Success Redeem",
+				"keyword_name": "WMDONATIONFIXED"
+			}
+		],
+		"keyword_approval": "62ffbdd1745271e7ba71e849",
+		"is_draft": false,
+		"need_review_after_edit": false,
+		"created_by": {
+			"_id": "633594fb37845362144f19b5",
+			"user_name": "putri",
+			"__v": 0,
+			"created_at": "2022-09-29T11:25:13.552Z",
+			"deleted_at": null,
+			"email": "putri@ptmitrabhakti.com",
+			"first_name": "Mrs. Putri",
+			"job_level": "User",
+			"superior_local": "",
+			"superior_hq": "633580da37845362144f0eda",
+			"job_title": "General User",
+			"last_name": "",
+			"phone": "0891234567|TH|+62",
+			"role": "63357ce737845362144f088e",
+			"type": "business",
+			"updated_at": "2022-09-29T11:25:13.552Z",
+			"user_id": "role-63347cd14e1348281aab21a9",
+			"role_detail": {
+				"_id": "63357ce737845362144f088e",
+				"role_id": "role-63347cd14e1348281aab21a9",
+				"__v": 0,
+				"authorizes": [],
+				"desc": "",
+				"name": "General User"
+			},
+			"account_location": {
+				"__v": 0,
+				"location": "62ffd9ed1e38fbdeb16f1f53",
+				"location_detail": {
+					"code": "1",
+					"name": "HQ",
+					"type": "62ffc0fc8a01008799e785bc",
+					"__v": 0
+				}
+			},
+			"core_payload": {
+				"locales": [
+					{
+						"id": "locale-60f550aa0cec03af7a5af73f",
+						"code": "en-US",
+						"name": "English",
+						"image_url": "https://bifrost.sandbox.wegiv.co/locale/en-US.png",
+						"status": "Active",
+						"__v": 0,
+						"time": "2020-01-01T00:00:00.000Z"
+					},
+					{
+						"id": "locale-60f550aa0cec03af7a5af740",
+						"code": "th-TH",
+						"name": "Thai",
+						"image_url": "https://bifrost.sandbox.wegiv.co/locale/th-TH.png",
+						"status": "Active",
+						"__v": 0,
+						"time": "2020-01-01T00:00:00.000Z"
+					}
+				],
+				"currencies": [
+					{
+						"id": "curecy-5902ca0b0257bb14df426921",
+						"code": "THB",
+						"name": "Thai Baht",
+						"unit_name": "unit_name",
+						"image_url": "https://bifrost.sandbox.wegiv.co/currency/currency_THB.png",
+						"status": "Active",
+						"__v": 0,
+						"time": "2020-01-01T00:00:00.000Z"
+					}
+				],
+				"user_profile": {
+					"id": "user-6335713278bc88320c08e662",
+					"username": "putri",
+					"firstname": "Mrs. Putri",
+					"lastname": "",
+					"job_title": "General User",
+					"job_level": "User",
+					"identification": {
+						"employee_no": "00001005"
+					},
+					"phone": "0891234567|TH|+62",
+					"email": "putri@ptmitrabhakti.com",
+					"image_url": null,
+					"status": "Active",
+					"last_access_time": "2023-02-01T02:52:31.588Z",
+					"__v": 0,
+					"role_id": "role-63347cd14e1348281aab21a9"
+				},
+				"authorizes": [
+					{
+						"object_code": "business.config.program",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.keyword",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.merchant",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.lov",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.bank",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.bucket",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.channel",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.customer_brand",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.customer",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.location",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.merchandise",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.outlet",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.parnert",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.notification",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.pic",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					},
+					{
+						"object_code": "business.config.tier",
+						"action_codes": [
+							"Read",
+							"Write"
+						]
+					}
+				]
+			}
+		},
+		"deleted_at": null,
+		"created_at": "2023-02-01T02:52:31.000Z",
+		"updated_at": "2023-02-01T02:52:31.000Z",
+		"__v": 0,
+		"hq_approver": "633580da37845362144f0eda"
+	},
+	"customer": {
+		"_id": "63dbce31f5d23254aa8d82fb",
+		"msisdn": "081214558896",
+		"los": 0,
+		"rev_m1": "TBC",
+		"loyalty_tier": [
+			{
+				"_id": "6371f3ebba1f936150be16de",
+				"name": "Silver",
+				"description": "silver tier",
+				"core_id": "tier-623bdcce7399b50e38fbe943",
+				"deleted_at": null,
+				"created_at": "2022-11-13T19:53:15.000Z",
+				"updated_at": "2023-01-19T06:03:59.745Z",
+				"__v": 0
+			}
+		],
+		"brand": [],
+		"arpu": "0",
+		"nik_dob": "",
+		"nik_rgn_name": "",
+		"region_lacci": "",
+		"cty_nme": "",
+		"kabupaten": "",
+		"kecamatan": "",
+		"cluster_sales": "",
+		"pre_pst_flag": 1,
+		"core_id": "member-63da47916ece4c481a60b385",
+		"deleted_at": null,
+		"created_at": "2023-02-02T02:52:33.000Z",
+		"updated_at": "2023-02-13T08:02:10.121Z",
+		"__v": 0,
+		"last_redeemed_date": "2023-02-13T08:02:09.741Z",
+		"customer_badges": []
+	},
+	"endpoint": "/v1/redeem",
+	"redeem": {
+		"locale": "en-US",
+		"msisdn": "6281214558896",
+		"origin": "redeem",
+		"master_id": "TRX_2023-03-09_6409741ec92fe2b6abe9c55d",
+		"tracing_id": "RDM_2023-03-09_6409741ec92fe2b6abe9c55d",
+		"status": "Processing",
+		"keyword": "WMDONATIONFIXED",
+		"send_notification": true,
+		"created_by": "63b40180924c2b8461462d45",
+		"deleted_at": null,
+		"_id": "6409741ec92fe2b6abe9c564",
+		"created_at": "2023-03-09T05:52:30.000Z",
+		"updated_at": "2023-03-09T05:52:30.000Z",
+		"__v": 0
+	},
+	"tracing_id": "TRX_2023-03-09_6409741ec92fe2b6abe9c55d",
+	"tracing_master_id": "TRX_2023-03-09_6409741ec92fe2b6abe9c55d",
+	"incoming": {
+		"locale": "en-US",
+		"msisdn": "6281214558896",
+		"keyword": "WMDONATIONFIXED",
+		"send_notification": true,
+		"tracing_id": "DDC_2023-03-09_6409741ec92fe2b6abe9c55d",
+		"master_id": "TRX_2023-03-09_6409741ec92fe2b6abe9c55d",
+		"total_point": -1,
+		"channel_id" : "I1",
+		"created_by": {
+			"_id": "63b40180924c2b8461462d45",
+			"user_name": "ganesha",
+			"__v": 0,
+			"created_at": "2023-01-02T22:20:48.000Z",
+			"deleted_at": null,
+			"email": "ganesha@smilefokus.com",
+			"first_name": "Ganesha",
+			"job_level": "User",
+			"job_title": "Full Control",
+			"last_name": "Hutama",
+			"phone": "081317569562|TH|+66",
+			"role": "63b40180924c2b8461462d43",
+			"type": "business",
+			"updated_at": "2023-01-02T22:20:48.000Z",
+			"user_id": "user-623bdc9d64059690a435b661",
+			"core_role": "role-6229d644d4d6fb7690fc092b",
+			"role_detail": {
+				"_id": "63b40180924c2b8461462d43",
+				"role_id": "role-6229d644d4d6fb7690fc092b",
+				"__v": 0,
+				"authorizes": [],
+				"desc": "Full Control",
+				"name": "Full Control"
+			},
+			"account_location": {
+				"__v": 0,
+				"location": "62ffd9ed1e38fbdeb16f1f53",
+				"location_detail": {
+					"code": "1",
+					"name": "HQ",
+					"type": "62ffc0fc8a01008799e785bc",
+					"__v": 0,
+					"data_source": "BOTH"
+				}
+			}
+		},
+		"responseBody": {
+			"code": "S00000",
+			"message": "Success",
+			"payload": {
+				"trx_no": "TRX_2023-03-09_6409741ec92fe2b6abe9c55d",
+				"trx_date": "2023-03-09T05:52:30.544Z",
+				"wallet": {
+					"id": "cwallt-63da47916ece4c481a60b389",
+					"pocket": {
+						"reward": {
+							"available": 356,
+							"rwditm-5902ca0b0257bb14df426921": {
+								"available": 100,
+								"total": 100,
+								"undefined": {
+									"amount": 100,
+									"expire_time": null,
+									"reward_instance_id": "rwdins-5902ca0b0257bb14df426921"
+								}
+							},
+							"total": 356,
+							"rwditm-635781bb0ea5b9d516a1e0f8": {
+								"1735664399999": {
+									"amount": 178,
+									"expire_time": "2024-12-31T16:59:59.999Z",
+									"reward_instance_id": "rwdins-635782100ea5b9d516a1e0fc"
+								},
+								"undefined": {
+									"amount": 1,
+									"expire_time": null,
+									"reward_instance_id": "rwdins-5902ca0b0257bb14df426921"
+								},
+								"available": 179,
+								"total": 179
+							},
+							"rwditm-635781d80ea5b9d516a1e0fa": {
+								"1735664399999": {
+									"amount": 77,
+									"expire_time": "2024-12-31T16:59:59.999Z",
+									"reward_instance_id": "rwdins-635782440ea5b9d516a1e104"
+								},
+								"available": 77,
+								"total": 77
+							}
+						}
+					},
+					"status": "Active",
+					"__v": 196
+				}
+			}
+		}
+	},
+	"account": {
+		"_id": "63b40180924c2b8461462d45",
+		"user_name": "ganesha",
+		"__v": 0,
+		"created_at": "2023-01-02T22:20:48.000Z",
+		"deleted_at": null,
+		"email": "ganesha@smilefokus.com",
+		"first_name": "Ganesha",
+		"job_level": "User",
+		"job_title": "Full Control",
+		"last_name": "Hutama",
+		"phone": "081317569562|TH|+66",
+		"role": "63b40180924c2b8461462d43",
+		"type": "business",
+		"updated_at": "2023-01-02T22:20:48.000Z",
+		"user_id": "user-623bdc9d64059690a435b661",
+		"core_role": "role-6229d644d4d6fb7690fc092b",
+		"role_detail": {
+			"_id": "63b40180924c2b8461462d43",
+			"role_id": "role-6229d644d4d6fb7690fc092b",
+			"__v": 0,
+			"authorizes": [],
+			"desc": "Full Control",
+			"name": "Full Control"
+		},
+		"account_location": {
+			"__v": 0,
+			"location": "62ffd9ed1e38fbdeb16f1f53",
+			"location_detail": {
+				"code": "1",
+				"name": "HQ",
+				"type": "62ffc0fc8a01008799e785bc",
+				"__v": 0,
+				"data_source": "BOTH"
+			}
+		}
+	},
+	"submit_time": "2023-11-07T07:22:30.382Z",
+	"token": "",
+	"bonus_type": "telco_postpaid",
+	"is_stock_deducted": false,
+	"is_whitelist_deducted": false,
+	"retry": {
+		"deduct": {
+			"counter": 0,
+			"errors": []
+		},
+		"refund": {
+			"counter": 0,
+			"errors": []
+		},
+		"inject_point": {
+			"counter": 0,
+			"errors": []
+		},
+		"donation": {
+			"counter": 0,
+			"errors": []
+		},
+		"coupon": {
+			"counter": 0,
+			"errors": []
+		},
+		"outbound": {
+			"counter": 0,
+			"errors": []
+		}
+	},
+	"rule": {
+		"fixed_multiple": {
+			"counter": 0
+		}
+	},
+	"payload": {
+		"deduct": {
+			"locale": "en-US",
+			"type": "reward",
+			"channel": "Application",
+			"reward_item_id": "rwditm-635781bb0ea5b9d516a1e0f8",
+			"amount": -5,
+			"remark": "Donation Fixed",
+			"member_id": "member-63da47916ece4c481a60b385",
+			"realm_id": "realm-623bdcce7399b50e38fbe93a",
+			"branch_id": "mbrnch-623bdcce7399b50e38fbe93a",
+			"merchant_id": "mercht-623bdcce7399b50e38fbe93a",
+			"__v": 195,
+			"transaction_no": "TRX_2023-03-09_6409741ec92fe2b6abe9c55d"
+		},
+		"telco_postpaid": null,
+		"telco_prepaid": null,
+		"link_aja_bonus": null,
+		"link_aja_main": null,
+		"ngrs": null,
+		"coupon": null,
+		"donation": {
+			"keyword": "63d9d3ef7367a1731283e684",
+			"start_time": "2023-01-17T09:23:54.010Z",
+			"end_time": "2038-01-31T09:23:54.000Z",
+			"trace_id": "DON_2023-03-09_6409741ec92fe2b6abe9c55d",
+			"master_id": "TRX_2023-03-09_6409741ec92fe2b6abe9c55d",
+			"msisdn": "6281214558896",
+			"total_redeem": 1,
+			"time": "2023-03-09T05:52:30.382Z"
+		},
+		"voucher": null,
+		"direct_redeem": null,
+		"void": null,
+		"inject_point": null,
+		"mbp": null
+	},
+	"notification": [
+		{
+			"via": "SMS",
+			"template_content": "Selamat Anda sukses menukar [poinRedeem] [programName] menjadi hadiah  [keywordDesc]: [voucherCode]/ [CouponAmountByTrx]/ pada Program [programName] yang berlaku sampai dengan [expDateVoucher].  "
+		}
+	]
+}

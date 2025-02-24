@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        table#alter tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#alter tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#alter th {
+            color: white;
+            background-color: rgb(209, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Program Name: {{this.program_name}}</p>
+        <p>Date: {{this.date}}</p>
+    </div>
+    <table id="alter">
+        <tr>
+            <th>TANGGAL</th>
+            <th>KEYWORD</th>
+            <th>SUKSES</th>
+            <th>GAGAL</th>
+            <th>TOTAL TRX</th>
+            <th>SISA STOCK</th>
+            <th>DEFAULT STOCK</th>
+        </tr>
+        {{#each this.items}}
+        <tr>
+            <td>{{date}}</td>
+            <td>{{keyword_name}}</td>
+            <td>{{total_success}}</td>
+            <td>{{total_failed}}</td>
+            <td>{{total_transaction}}</td>
+            <td>{{remaining_stock}}</td>
+            <td>{{default_stock}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+
+</html>

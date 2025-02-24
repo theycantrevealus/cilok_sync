@@ -1,0 +1,37 @@
+{
+    "type": "SERVICE",
+    "name": "DAILY_CHECKIN_REPORT",
+    "description": "For execute daily checkin report",
+    "interval": "*/10 * * * * *",
+    "target_topic": "REPORTING_SFTP",
+    "payload": 
+    {
+      "origin": "cron",
+      "service_name": "daily_checkin_report",
+      "target_topic": "reporting_sftp",
+      "purpose": "sftp-outgoing",
+      "parameter": {
+          "keyword": [
+              "JJLN"
+          ],
+          "generate_dir": "./generated/daily_checkin_report"
+        },
+      "sftp_config": {
+          "generated_file": "./generated/test1234.json",
+          "file_extension": "csv",
+          "server_destination": [
+              {
+                  "label": "IDAM",
+                  "host": "18.143.54.48",
+                  "port": 22,
+                  "username": "ec2-user",
+                  "sshKey": "./weGIV-sandbox-201910.pem",
+                  "fileAndPath": "./test.json"
+              }
+          ]
+      }
+    },
+    "is_running": false,
+    "need_restart": false,
+    "pending_for": null
+  }
